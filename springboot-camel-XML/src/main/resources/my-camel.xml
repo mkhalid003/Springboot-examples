@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+  <camelContext id="SampleCamel" xmlns="http://camel.apache.org/schema/spring">
+    
+    <route id="hello">
+      <from uri="timer:mytimer?period={{timer.period}}"/>
+       <setBody>
+      	<simple>${{greeting}}, this is Camel running in Spring Boot!</simple>
+      </setBody>
+       <to uri="log:out"/>
+    </route>
+  
+  </camelContext>
+
+</beans>
