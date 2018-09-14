@@ -1,0 +1,44 @@
+09:13 18:59:28.590 [main] [INFO] [com.demo.Application] - Starting Application on XEN-565 with PID 11304 (D:\MKhalid\MyWork\STS-Workspace\demoservice\target\classes started by mkhalid1 in D:\MKhalid\MyWork\STS-Workspace\demoservice)
+09:13 18:59:28.592 [main] [DEBUG] [com.demo.Application] - Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+09:13 18:59:28.592 [main] [INFO] [com.demo.Application] - No active profile set, falling back to default profiles: default
+09:13 18:59:28.618 [main] [INFO] [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@67e2d983: startup date [Thu Sep 13 18:59:28 IST 2018]; root of context hierarchy
+09:13 18:59:29.280 [main] [INFO] [o.s.b.c.e.t.TomcatEmbeddedServletContainer] - Tomcat initialized with port(s): 9000 (http)
+09:13 18:59:29.428 [localhost-startStop-1] [INFO] [o.s.b.w.s.ServletRegistrationBean] - Mapping servlet: 'dispatcherServlet' to [/]
+09:13 18:59:29.433 [localhost-startStop-1] [INFO] [o.s.b.w.s.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+09:13 18:59:29.434 [localhost-startStop-1] [INFO] [o.s.b.w.s.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:13 18:59:29.434 [localhost-startStop-1] [INFO] [o.s.b.w.s.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:13 18:59:29.434 [localhost-startStop-1] [INFO] [o.s.b.w.s.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+09:13 18:59:29.785 [main] [INFO] [o.s.b.c.e.t.TomcatEmbeddedServletContainer] - Tomcat started on port(s): 9000 (http)
+09:13 18:59:29.788 [main] [INFO] [com.demo.Application] - Started Application in 1.346 seconds (JVM running for 1.922)
+09:13 18:59:42.451 [http-nio-9000-exec-1] [INFO] [c.d.interceptor.RequestInterceptor] - In preHandle we are Intercepting the Request
+09:13 18:59:42.451 [http-nio-9000-exec-1] [INFO] [c.d.interceptor.RequestInterceptor] - ____________________________________________
+09:13 18:59:42.452 [http-nio-9000-exec-1] [INFO] [c.d.interceptor.RequestInterceptor] - RequestURI::/demo/echo
+09:13 18:59:42.452 [http-nio-9000-exec-1] [INFO] [c.d.interceptor.RequestInterceptor] - ____________________________________________
+09:13 18:59:42.460 [http-nio-9000-exec-1] [INFO] [c.d.controller.EchoServiceController] - [EchoServiceController] executing echoMessage
+09:13 18:59:42.467 [http-nio-9000-exec-1] [INFO] [c.d.interceptor.RequestInterceptor] - _________________________________________
+09:13 18:59:42.468 [http-nio-9000-exec-1] [INFO] [c.d.interceptor.RequestInterceptor] - In postHandle request processing completed by @RestController
+09:13 18:59:42.468 [http-nio-9000-exec-1] [INFO] [c.d.interceptor.RequestInterceptor] - _________________________________________
+09:13 18:59:42.468 [http-nio-9000-exec-1] [INFO] [c.d.interceptor.RequestInterceptor] - ________________________________________
+09:13 18:59:42.468 [http-nio-9000-exec-1] [INFO] [c.d.interceptor.RequestInterceptor] - In afterCompletion Request Completed
+09:13 18:59:42.468 [http-nio-9000-exec-1] [INFO] [c.d.interceptor.RequestInterceptor] - ________________________________________
+09:13 19:00:05.181 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - In preHandle we are Intercepting the Request
+09:13 19:00:05.182 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - ____________________________________________
+09:13 19:00:05.182 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - RequestURI::/demo/echo
+09:13 19:00:05.182 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - ____________________________________________
+09:13 19:00:05.182 [http-nio-9000-exec-3] [INFO] [c.d.controller.EchoServiceController] - [EchoServiceController] executing echoMessage
+09:13 19:00:05.182 [http-nio-9000-exec-3] [ERROR] [c.d.controller.EchoServiceController] - Please provide your name
+09:13 19:00:05.204 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - ________________________________________
+09:13 19:00:05.204 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - In afterCompletion Request Completed
+09:13 19:00:05.204 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - ________________________________________
+09:13 19:00:05.211 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - In preHandle we are Intercepting the Request
+09:13 19:00:05.211 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - ____________________________________________
+09:13 19:00:05.211 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - RequestURI::/demo/error
+09:13 19:00:05.211 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - ____________________________________________
+09:13 19:00:05.214 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - _________________________________________
+09:13 19:00:05.215 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - In postHandle request processing completed by @RestController
+09:13 19:00:05.215 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - _________________________________________
+09:13 19:00:05.226 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - ________________________________________
+09:13 19:00:05.226 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - In afterCompletion Request Completed
+09:13 19:00:05.226 [http-nio-9000-exec-3] [INFO] [c.d.interceptor.RequestInterceptor] - ________________________________________
+09:13 19:00:49.992 [RMI TCP Connection(6)-127.0.0.1] [INFO] [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] - Application shutdown requested.
+09:13 19:00:49.992 [RMI TCP Connection(6)-127.0.0.1] [INFO] [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@67e2d983: startup date [Thu Sep 13 18:59:28 IST 2018]; root of context hierarchy
