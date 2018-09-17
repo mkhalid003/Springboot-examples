@@ -1,0 +1,166 @@
+{
+	"id": "3ee6845a-0295-23c4-a56f-0c9ef7928b54",
+	"name": "Oauth-Demo",
+	"description": "",
+	"order": [
+		"1e4a23f3-e545-fefc-4153-3b29d74aadde",
+		"07bd509c-1199-294e-01e0-a8895102e676",
+		"1f3f4d5b-491a-4154-45cb-5deb74bc132c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1523017412954,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "07bd509c-1199-294e-01e0-a8895102e676",
+			"headers": "Authorization: Bearer 65f04410-2c85-4494-8116-926aa0225ae7\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 65f04410-2c85-4494-8116-926aa0225ae7",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/oauthdemo/api/employee/get",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3ee6845a-0295-23c4-a56f-0c9ef7928b54",
+			"data": null,
+			"dataMode": "params",
+			"name": "Hit  Sample API",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1523017442784,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "3ee6845a-0295-23c4-a56f-0c9ef7928b54"
+		},
+		{
+			"id": "1e4a23f3-e545-fefc-4153-3b29d74aadde",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Basic Y3JtQ2xpZW50MTpjcm1TdXBlclNlY3JldA==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Y3JtQ2xpZW50MTpjcm1TdXBlclNlY3JldA==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/oauthdemo/oauth/token",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "crmadmin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "crmpass",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "password",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "crmClient1",
+				"password": "crmSuperSecret",
+				"saveToRequest": true
+			},
+			"time": 1523018054714,
+			"name": "Get Access  Token - /oauthdemo/oauth/token",
+			"description": "This POST method get access token from auth server",
+			"collectionId": "3ee6845a-0295-23c4-a56f-0c9ef7928b54",
+			"responses": []
+		},
+		{
+			"id": "1f3f4d5b-491a-4154-45cb-5deb74bc132c",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Basic Y3JtQ2xpZW50MTpjcm1TdXBlclNlY3JldA==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic Y3JtQ2xpZW50MTpjcm1TdXBlclNlY3JldA==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/oauthdemo/oauth/token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3ee6845a-0295-23c4-a56f-0c9ef7928b54",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "refresh_token",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "refresh_token",
+					"value": "d2a3780b-5f54-4e3a-845b-04271b9b8bc2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Refresh Access Token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1523018422361,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "crmClient1",
+				"password": "crmSuperSecret",
+				"saveToRequest": true
+			}
+		}
+	]
+}
