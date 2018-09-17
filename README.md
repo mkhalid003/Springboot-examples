@@ -15,3 +15,8 @@ springboot-camel-XML includes functionality of following:
 ---------------------------------------------------------
 1. Springboot + Apache camel
 2. Springboot + camel xml DSL routes.
+
+springboot-rest-oauth
+---------------------------------------------------------
+This example works with spring & oauth 2 Authentication and Authorization.
+Postman tester is included with project.
